@@ -1,0 +1,31 @@
+.Search {
+  background-color: var(--color-white);
+  border-radius: 30px;
+  display: flex;
+  border: none;
+  height: 4vh;
+}
+
+.SearchIcon {
+  text-align: center;
+  font-size: 2vh;
+  line-height: 3vh;
+  width: 3vh;
+  height: 3vh;
+  margin: 0.5vh 0.5vh;
+}
+
+.SearchInput {
+  width: 80%;
+  background-color: var(--color-white);
+  border: 0;
+  outline: 0;
+  font-size: 1.5vh;
+  line-height: 3vh;
+  height: 3vh;
+  margin: 0.5vh 0;
+}
+
+.SearchInput::placeholder {
+  font-style: italic;
+}

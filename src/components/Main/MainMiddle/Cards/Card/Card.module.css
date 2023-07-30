@@ -1,0 +1,131 @@
+.Card {
+  width: 100%;
+  margin: 0.5vh 0;
+  background-color: var(--color-bgwhite);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProfileCtn {
+  position: relative;
+  margin: 0 2vh;
+  height: 8vh;
+  display: grid;
+  justify-content: start;
+  grid-template-rows: repeat(4, 2vh);
+}
+
+.ProfileImg {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  margin: 2vh 1vh;
+}
+
+.ProfileName {
+  height: 2vh;
+  font-size: 2vh;
+  line-height: 2vh;
+  font-weight: 900;
+  color: var(--color-black);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: left;
+}
+
+.ProfilePositionTime {
+  height: 2vh;
+  font-size: 1.5vh;
+  line-height: 2vh;
+  font-weight: 200;
+  color: var(--color-gray);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: left;
+}
+
+.ProfileCtn i {
+  height: 4vh;
+  position: absolute;
+  font-size: 2vh;
+  right: 3vh;
+  line-height: 4vh;
+  margin: 2vh 0;
+  cursor: pointer;
+}
+
+.CardPic {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex: auto;
+}
+
+.CardFunction {
+  display: flex;
+  height: 4.5vh;
+  width: 95%;
+  margin: 1vh auto;
+  position: relative;
+}
+
+.CardFunctionLike,
+.CardFunctionComment,
+.CardFunctionShare {
+  font-size: 4vh;
+  line-height: 4.5vh;
+  color: var(--color-primary);
+  cursor: pointer;
+  margin: 0 1vh;
+}
+
+.CardFunctionMark {
+  font-size: 4vh;
+  line-height: 4.5vh;
+  color: bisque;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.Like {
+  display: flex;
+  height: 3vh;
+  width: 95%;
+  margin: 0.2vh auto;
+}
+
+.LikeProfileImg {
+  width: 3vh;
+  height: 3vh;
+  margin: 0 0.5vh;
+}
+
+.LikeInfo {
+  height: 3vh;
+  line-height: 3vh;
+  margin-left: 1vh;
+}
+
+.LikeComment {
+  height: 3vh;
+  line-height: 3vh;
+  width: 95%;
+  margin: 0.2vh auto;
+  text-align: left;
+  font-weight: 500;
+}
+
+.ViewInfo {
+  height: 3vh;
+  line-height: 3vh;
+  width: 95%;
+  margin: 0.2vh auto;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--color-gray);
+}

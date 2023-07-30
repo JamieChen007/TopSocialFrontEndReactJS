@@ -1,0 +1,8 @@
+.ProfileImg {
+  width: 4vh;
+  height: 4vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid var(--color-primary);
+  border-radius: 100%;
+}

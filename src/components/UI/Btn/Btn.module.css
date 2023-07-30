@@ -1,0 +1,14 @@
+.Btn {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.Btn:hover {
+  color: var(--color-black);
+}

@@ -1,0 +1,8 @@
+.Menus {
+  width: 100%;
+  margin: 1vh 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bgwhite);
+  border-radius: 10px;
+}

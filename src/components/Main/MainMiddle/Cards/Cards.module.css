@@ -1,0 +1,6 @@
+.Cards {
+  width: 100%;
+  margin: 1vh 0;
+  display: flex;
+  flex-direction: column;
+}
