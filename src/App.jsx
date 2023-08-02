@@ -18,7 +18,7 @@ const App = () => {
     if (getCardsSuccess) {
       setCardsData(cardsAllData.data);
     }
-  }, []);
+  }, [getCardsSuccess]);
 
   const filterData = (keyword) => {
     if (getCardsSuccess) {

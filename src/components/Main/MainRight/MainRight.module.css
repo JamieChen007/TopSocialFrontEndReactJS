@@ -5,6 +5,18 @@
   flex-direction: column;
 }
 
+@media only screen and (max-width: 1400px) {
+  .MainRight {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .MainRight {
+    display: none;
+  }
+}
+
 .MainRight span {
   text-align: left;
   text-transform: capitalize;
@@ -64,6 +76,7 @@
 .TabMenus {
   border-bottom: 1vh solid var(--color-white);
   display: flex;
+  justify-content: center;
   width: 90%;
   margin: 1vh auto;
   height: 4vh;
@@ -71,7 +84,7 @@
 
 .TabMenu {
   height: 4vh;
-  width: 100%;
+  width: 8vw;
   line-height: 4vh;
   font-weight: 900;
   color: var(--color-gray);

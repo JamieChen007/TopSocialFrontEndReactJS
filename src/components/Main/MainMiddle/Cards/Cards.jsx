@@ -8,6 +8,7 @@ const Cards = () => {
 
   return (
     <div className={classes.Cards}>
+      {ctx.cardsData.length === 0 && <div>no data found</div>}
       {ctx.cardsData.map((item) => {
         return <Card key={item.id} card={item} />;
       })}

@@ -130,6 +130,12 @@ const MainRight = () => {
           {activeTab === "requests" && getRequestSuccess && (
             <Requests requestData={requestFilterResult} />
           )}
+          {activeTab === "primary" && !getMessageSuccess && (
+            <div>no data found</div>
+          )}
+          {activeTab === "requests" && !getRequestSuccess && (
+            <div>no data found</div>
+          )}
         </div>
       </div>
       <span>request</span>
