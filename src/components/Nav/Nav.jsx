@@ -6,10 +6,13 @@ import SearchBar from "../UI/SearchBar/SearchBar";
 import ProfileContext from "../../store/profile-context";
 
 const Nav = (props) => {
+  // navbar short CSS style
   const [navbarShortStyle, setNavbarShortStyle] = useState({});
 
+  // logo short CSS style
   const [logoShortStyle, setLogoShortStyle] = useState({});
 
+  // call profile context data
   const ctx = useContext(ProfileContext);
 
   //navbar height change
@@ -30,6 +33,7 @@ const Nav = (props) => {
     }
   };
 
+  // set event listener when component first load
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler);
 

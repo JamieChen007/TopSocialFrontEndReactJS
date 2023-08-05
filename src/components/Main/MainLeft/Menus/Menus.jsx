@@ -1,6 +1,7 @@
 import Menu from "./Menu/Menu";
 import classes from "./Menus.module.css";
 
+// menu name and icon class
 const MENU_LIST = [
   {
     name: "home",

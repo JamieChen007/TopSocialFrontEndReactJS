@@ -6,6 +6,7 @@ import ProfileContext from "../../../store/profile-context";
 import { useContext } from "react";
 
 const MainLeft = () => {
+  // call profile context data
   const ctx = useContext(ProfileContext);
 
   return (

@@ -4,6 +4,7 @@ import classes from "./Cards.module.css";
 import { useContext } from "react";
 
 const Cards = () => {
+  // call cards context data
   const ctx = useContext(CardContext);
 
   return (

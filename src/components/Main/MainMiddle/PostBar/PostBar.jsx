@@ -5,6 +5,7 @@ import { useContext } from "react";
 import Btn from "../../../UI/Btn/Btn";
 
 const PostBar = () => {
+  // call profile context data
   const ctx = useContext(ProfileContext);
 
   return (

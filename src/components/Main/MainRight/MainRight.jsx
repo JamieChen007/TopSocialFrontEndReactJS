@@ -7,18 +7,22 @@ import { useGetRequestQuery } from "../../../store/requestApi";
 import { useGetMessageQuery } from "../../../store/messageApi";
 
 const MainRight = () => {
+  // set activeTab as a state
   const [activeTab, setActiveTab] = useState("");
 
+  // tabs chosen CSS style
   const style = {
     color: "var(--color-black)",
     borderBottom: "1vh solid var(--color-primary)",
     transition: "border-bottom 1s",
   };
 
+  // tabs CSS style
   let [primaryStyle, setPrimaryStyle] = useState({});
   let [generalStyle, setGeneralStyle] = useState({});
   let [requestsStyle, setRequestsStyle] = useState({});
 
+  // click primary tab
   const primaryClickHandler = () => {
     setActiveTab("primary");
     setPrimaryStyle(style);
@@ -26,6 +30,7 @@ const MainRight = () => {
     setRequestsStyle({});
   };
 
+  // click general tab
   const generalClickHandler = () => {
     setActiveTab("general");
     setPrimaryStyle({});
@@ -33,6 +38,7 @@ const MainRight = () => {
     setRequestsStyle({});
   };
 
+  // click requests tab
   const requestsClickHandler = () => {
     setActiveTab("requests");
     setPrimaryStyle({});
@@ -40,16 +46,21 @@ const MainRight = () => {
     setRequestsStyle(style);
   };
 
+  // get all request data trough API from backend
   const { data: requestData, isSuccess: getRequestSuccess } =
     useGetRequestQuery();
 
+  // get all message data trough API from backend
   const { data: messageData, isSuccess: getMessageSuccess } =
     useGetMessageQuery();
 
+  // message data after filter
   const [messageFilterResult, setMessageFilterResult] = useState([]);
 
+  // request data after filter
   const [requestFilterResult, setRequestFilterResult] = useState([]);
 
+  // function for filter and set data, pass to Messages or Requests component, depends on tab chosen
   const filterData = (keyword) => {
     if (getMessageSuccess && activeTab === "primary") {
       const result = messageData.data.filter(
@@ -68,17 +79,20 @@ const MainRight = () => {
     }
   };
 
+  // set default chosen tab and style when component first load
   useEffect(() => {
     setPrimaryStyle(style);
     setActiveTab("primary");
   }, []);
 
+  // set all messages data as message data by default when API call success
   useEffect(() => {
     if (getMessageSuccess) {
       setMessageFilterResult(messageData.data);
     }
   }, [getMessageSuccess]);
 
+  // set all requests data as request data by default when API call success
   useEffect(() => {
     if (getRequestSuccess) {
       setRequestFilterResult(requestData.data);

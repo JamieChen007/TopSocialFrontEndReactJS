@@ -3,11 +3,14 @@ import Highline from "./Highline/Highline";
 import { useGetHighlineQuery } from "../../../../store/highlineApi";
 
 const Highlines = () => {
+  //get highline data trough API from backend
   const { data: highlineData, isSuccess: getHighlineSuccess } =
     useGetHighlineQuery();
 
+  // highline data array
   let HighlinesArr = [];
 
+  // format highline data to array
   if (getHighlineSuccess) {
     let highlinePieces = 6;
     for (let i = 0; i < highlinePieces; i++) {
