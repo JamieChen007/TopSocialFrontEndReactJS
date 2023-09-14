@@ -1,8 +1,9 @@
-# React + Vite
+# TOP SOCIAL 'REACT + VITE' version
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is TOP SOCIAL 'REACT + VITE' version.
 
-Currently, two official plugins are available:
+[Github](https://github.com/JamieChen007/TopSocialFrontEndReactJS)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To see 'vanilla + VITE' version. Visit below.
+
+[Github](https://github.com/JamieChen007/top-social-practise-client/tree/master/top-social%20client)
